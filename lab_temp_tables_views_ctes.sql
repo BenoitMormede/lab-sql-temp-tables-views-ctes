@@ -55,6 +55,7 @@ SELECT c.last_name, c.rental_count, c.total_paid,
         ELSE 0
     END AS average_payment_per_rental
 FROM 
-    customer_summary_cte c;
+    customer_summary_cte c
+ORDER BY average_payment_per_rental DESC
     
 
